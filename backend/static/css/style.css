@@ -7,5 +7,285 @@
 
 :root{
     --bg-primary:#8973EF;
-    --bg-dark:#2D3748;
+    --bg-pri-tint:#9284db;
+    --bg-dark:#202124;
+    --write-fff:#f5f5f5;
+}
+
+@font-face {
+    font-family:"Cabin" ;
+    src: url("./fonts/Cabin-Italic-VariableFont_wdth.ttf");
+    font-style: italic;
+}
+@font-face {
+    font-family:"Cabin" ;
+    src: url("./fonts/Cabin-VariableFont_wdth");
+}
+
+
+html{
+    font-family: "Cabin", "system-ui" , sans-serif;
+    scroll-behavior: smooth;
+    line-height: 1.5;
+}
+
+
+.container{
+    width: 100%;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+header{
+    width: 100%;
+    height: 70px;
+    padding: 0.5rem  1rem;
+    background-color: var(--bg-dark);
+    color: var(--write-fff);
+    position: relative;
+    z-index: 10;
+}
+
+.logo a, header, .header__nav, .nav__listed{
+    display: flex;
+    height: 100%;
+}
+
+
+.logo a{
+    align-items: center;
+}
+.logo img{
+    width: 45px;
+}
+
+.logo h2{
+    margin-left: 0.5rem;
+}
+
+
+.header__nav{
+    display: none;
+}
+
+.mobile_toggle{
+    margin-left: auto;
+}
+
+.mobile__nav{
+    width: 100%;
+    position: absolute;
+    background-color: #fff;
+    color: var(--bg-dark);
+    left: 0;
+    bottom: 100%;
+    padding: 1rem;
+}
+
+.mobile__nav >ul{
+    list-style: none;
+    margin-bottom: 1rem;
+}
+
+.mobile__nav li a{
+    display: block;
+    width: 100%;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.call a{
+    font-weight: bold;
+}
+
+.close__mob{
+    text-align: end;
+}
+.close__mob .jam{
+    font-size: 2rem;
+}   
+
+.mobile__nav li a:hover{
+    background-color: #ddd;
+}
+
+@media screen and (min-width:700px) {
+    .header{
+        padding: 0  2rem;
+    }
+    .header__nav{
+        display: flex;
+        margin-left: 3.5rem;
+        flex-grow: 1;
+        flex-shrink: 0;
+    }
+
+    .mobile__nav{
+        display: none;
+    }
+
+    .mobile_toggle{
+        display: none;
+    }
+}
+
+@media screen and (min-width:1000px) {
+    header{
+        padding: 1rem 4rem;
+    }
+}
+
+
+.header__nav ul{
+    list-style: none;
+}
+
+
+.header__nav a{
+    font-weight: bold;
+    text-transform: capitalize;
+}
+
+.nav__listed li{
+    margin-right: 3.5rem;
+}
+
+.nav__listed li> a, .vibrant__call li >a{
+    padding: 1rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.vibrant__call{
+    margin-left: auto;
+}
+
+.vibrant__call li{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.vibrant__call a{
+    width: 120px;
+    height: 40px;
+    background-color: var(--bg-primary);
+    border-radius: 5px;
+}
+
+
+.welcome{
+        overflow: hidden;
+        position: relative;
+        background-color: var(--bg-dark);
+        color: var(--write-fff);
+        padding-top: 4rem;
+}
+
+.welcome-main{
+    margin-bottom: 130px;
+    padding: 2rem;
+}
+
+.display{
+    display: none;
+}
+
+
+@media screen and (min-width:1000px) {
+    .welcome-main{
+        display: flex;
+        padding: 0;
+        margin-bottom: 200px;
+    }
+    .business__content{
+        width: 60%;
+        flex-basis: 60%;
+        padding: 2rem 4rem;
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: center;
+    }    
+    .display{
+        width: 40%;
+        flex-basis: 40%;
+        display: flex;
+        align-items: center;
+    }
+    
+    .display video{
+        width: 100%;
+        mix-blend-mode: lighten;
+    }
+}
+
+
+
+
+
+.links{
+    padding: 1.2rem 0;
+}
+
+.lnk__space{
+    margin: 1rem 0.5rem;
+}
+
+
+.a_btn__large{
+    display: block;
+    padding: 0.6rem 2rem;
+    border-radius: 5px;
+    font-weight: bold;
+    background-color: var(--bg-primary);
+    text-align: center;
+}
+
+.a_btn__large:hover, .vibrant__call a:hover{
+    background-color: var(--bg-pri-tint);
+}
+
+
+
+.a_btn_border_fff{
+    display: block;
+    padding: 0.6rem 2rem;
+    text-align: center;
+    border: 2px solid #fff;
+    border-radius: 5px;
+}
+
+
+@media screen and (min-width: 700px) {
+    .links{
+        display: flex;
+    }
+    .lnk__space{
+        margin: 0 0.5rem;
+    }    
+
+    .btn_md{
+        width: 220px;
+    }
+}
+
+
+
+
+
+.welcome >svg{
+    position: absolute;
+    /* bottom: -4.2rem; */
+    bottom: 0;
+    left: 0;
+}
+
+.jam{
+    font-size: 3rem;
 }
