@@ -10,6 +10,8 @@
     --bg-pri-tint:#9284db;
     --bg-dark:#202124;
     --write-fff:#f5f5f5;
+    --fade-write: #6c7a87;
+    --dark-raise:#313232;
 }
 
 @font-face {
@@ -204,6 +206,9 @@ header{
         padding: 0;
         margin-bottom: 200px;
     }
+    #business_synopsis{
+        font-size: 1.8rem;
+    }
     .business__content{
         width: 60%;
         flex-basis: 60%;
@@ -277,15 +282,234 @@ header{
 
 
 
-
-
-.welcome >svg{
-    position: absolute;
-    /* bottom: -4.2rem; */
-    bottom: 0;
-    left: 0;
+.features{
+    position: relative;
 }
+
+.features svg{
+    position: absolute; bottom:100% ; left: 0;
+}
+
+#pricing,  #features{
+    padding: 4rem 1rem 3rem 1rem;
+    text-align: center;
+    font-size: 2rem;
+}
+
+
+.grid__features{
+    display:flex;
+    padding: 0rem 1rem;
+    flex-direction: column;
+    align-items: center;
+}
+
+.feature__card,.fee_card{
+    min-height: 180px;
+    padding: 1rem 0rem;
+}
+
+.feature__content h3{
+    margin-bottom: 0.3rem;
+    text-transform: capitalize;
+}
+.feature__content p{
+    color: var(--fade-write);
+    font-weight: 500;
+}
+.card__wrap{
+    display: flex;
+    border: 1px solid #dcdfe2;
+    height: 100%;
+    flex-grow: 1;
+    flex-shrink: 0;
+    border-radius: 6px;
+    padding: 1rem;
+}
+
+.card__wrap:hover{
+    box-shadow: 0 1rem 3rem rgba(31, 45, 61, 0.125);
+}
+
+.icon{
+    padding: 1rem ;
+}
+
+.icon__wrapper{
+    border-radius: 50%;
+    padding: 1.1rem ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card__one .icon__wrapper{
+    background-color: #f93542;
+    box-shadow: 0px 14px 30px 0px rgba(249, 53, 66,0.4);
+}
+
+.card__two .icon__wrapper{
+    background-color: #50b5ff;
+    box-shadow: 0px 14px 30px 0px rgba(80, 181, 255, 0.4);
+}
+
+.card__three .icon__wrapper{
+    background-color: #31d1ab;
+    box-shadow: 0px 14px 30px 0px rgba(49, 209, 171, 0.4);
+}
+.card__four .icon__wrapper{
+    background-color: rgba(45, 0, 247,1);
+    box-shadow: 0px 14px 30px 0px rgba(45, 0, 247, 0.4);
+}
+
+.card__five .icon__wrapper{
+    background-color: rgba(255, 159, 28, 1);
+    box-shadow: 0px 14px 30px 0px rgba(255, 159, 28, 0.4);
+    
+}
+
+.card__six .icon__wrapper{
+    background-color: #f93542;
+    box-shadow: 0px 14px 30px 0px rgba(249, 53, 66,0.4);
+}
+
+.icon__wrapper i{
+    font-size: 1.5rem;
+    color: var(--write-fff);
+}
+
+
+@media screen and (min-width:1000px) {
+    #pricing,  #features{
+        padding: 3rem 4rem 3rem 4rem;
+        font-size: 2.4rem;
+    }
+    .grid__features{
+        padding: 0rem 4rem;
+        flex-flow: row wrap;
+        justify-content: center;
+        align-items: flex-start;
+    }
+    .feature__card, .fee_card{
+        flex-basis: 33.3%;
+        padding:  1rem;
+    }
+}
+
 
 .jam{
     font-size: 3rem;
+}
+
+.pricing{
+    margin-top: 4rem;
+    background-color: var(--bg-dark);
+    color: var(--write-fff);
+    padding-bottom: 4rem;
+}
+
+
+.fee_card{
+    height: 400px;
+    flex-basis: 90%;
+    width: 90%;
+    background-color: var(--dark-raise);
+    margin-bottom: 2rem;
+    border-radius: 8px;
+    justify-content: center;
+}
+
+.fee_card > *{
+    margin: 0.5rem 0;
+}
+
+.fee_card > h4{
+    text-transform: capitalize;
+    text-align: center;
+}
+.fee span,.fee s{
+    display: block;
+    text-align: center;
+}
+.fee span{
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.fee span::first-letter{
+    font-size: 2.3rem;
+    font-style: italic;
+    color: var(--bg-primary);
+    margin-right: 0.25rem;
+}
+
+.plan{
+    text-align: center;
+}
+
+.plan__features ul{
+    list-style: none;
+    padding: 1rem;
+}
+
+.plan__features li{
+    margin: 1rem 0;
+}
+
+.plan__features i{
+    font-size: 1.2rem;
+    color: var(--bg-primary);
+    margin-right: 0.5rem;
+}
+
+
+
+@media screen and (min-width:700px) {
+    .fee_card{
+        flex-basis: 50%;
+        width: 50%;
+    }
+
+}
+@media screen and (min-width:1000px) {
+    .fee_card{
+        margin-right: 1rem;
+        margin-bottom: 0;
+        flex-basis: calc(33% - 2rem);
+    }
+    
+}
+
+.api{
+    padding: 5rem 0;
+    display: flex;
+}
+
+
+.img__api{
+    display: none;
+}
+
+.api__content{
+    padding: 1rem 3rem;
+}
+
+.api__content{
+    text-align: center;
+}
+
+
+
+@media screen and (min-width:1000px) {
+    .img__api, .api__content{
+        flex-basis: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .api__content{
+        flex-direction: column;
+        padding: 1rem 3rem;
+    }
 }
