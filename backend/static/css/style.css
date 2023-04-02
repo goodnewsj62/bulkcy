@@ -200,6 +200,10 @@ header{
 }
 
 
+.business__content > *{
+    margin-bottom: 0.7rem;
+}
+
 @media screen and (min-width:1000px) {
     .welcome-main{
         display: flex;
