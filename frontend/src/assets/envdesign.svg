@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="166.28627mm"
+   height="183.34261mm"
+   viewBox="0 0 197.6814 217.958"
+   version="1.1"
+   id="svg3341"
+   inkscape:version="1.2.2 (732a01da63, 2022-12-09, custom)"
+   sodipodi:docname="envdesign.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview3343"
+     pagecolor="#ffffff"
+     bordercolor="#999999"
+     borderopacity="1"
+     inkscape:showpageshadow="0"
+     inkscape:pageopacity="0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="mm"
+     showgrid="false"
+     inkscape:zoom="0.6346963"
+     inkscape:cx="366.31693"
+     inkscape:cy="402.55474"
+     inkscape:window-width="1294"
+     inkscape:window-height="704"
+     inkscape:window-x="72"
+     inkscape:window-y="27"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="g9208" />
+  <defs
+     id="defs3338" />
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(2.7220104,-57.337032)">
+    <g
+       id="g9208"
+       transform="translate(13.967715,18.306805)">
+      <g
+         id="g9218"
+         style="fill:#ffffff">
+        <path
+           id="path3690"
+           style="fill:#ffffff;fill-opacity:1;stroke:#272d2d;stroke-width:0;stroke-linecap:round;stop-color:#000000"
+           d="m 163.56426,119.82235 -82.243089,-62.434337 21.036269,58.483667 60.85446,4.05528 z m -82.243089,-62.434337 -0.01834,-0.05098 -0.03264,0.01218 z m 80.512729,64.528097 -0.17545,0.0522 -4.1e-4,-3.1e-4 -24.21366,-1.61331 -36.6407,-2.44124 -21.017706,-58.433833 -39.131129,51.421233 82.047305,62.43731 z" />
+        <rect
+           style="fill:#ffffff;stroke:#272d2d;stroke-width:0;stroke-linecap:round;stop-color:#000000"
+           id="rect9184"
+           width="10.561681"
+           height="56.908497"
+           x="98.379608"
+           y="82.489075"
+           ry="5.2808404"
+           transform="rotate(36.013468)" />
+        <rect
+           style="fill:#ffffff;stroke:#272d2d;stroke-width:0;stroke-linecap:round;stop-color:#000000"
+           id="rect9186"
+           width="10.561681"
+           height="81.59037"
+           x="118.7084"
+           y="92.258896"
+           ry="5.2808404"
+           transform="rotate(35.634117)" />
+        <rect
+           style="fill:#ffffff;stroke:#272d2d;stroke-width:0;stroke-linecap:round;stop-color:#000000"
+           id="rect9188"
+           width="10.561681"
+           height="64.615906"
+           x="144.90506"
+           y="79.011154"
+           ry="5.9960513"
+           transform="rotate(35.449228)" />
+        <rect
+           style="fill:#ffffff;stroke:#272d2d;stroke-width:0;stroke-linecap:round;stop-color:#000000"
+           id="rect9190"
+           width="10.561681"
+           height="50.190258"
+           x="170.07899"
+           y="91.299995"
+           ry="5.2808404"
+           transform="rotate(35.342702)" />
+        <rect
+           style="fill:#ffffff;stroke:#272d2d;stroke-width:0;stroke-linecap:round;stop-color:#000000"
+           id="rect9192"
+           width="10.561681"
+           height="28.033489"
+           x="146.29532"
+           y="151.20793"
+           ry="5.2808404"
+           transform="rotate(36.060051)" />
+        <rect
+           style="fill:#ffffff;stroke:#272d2d;stroke-width:0;stroke-linecap:round;stop-color:#000000"
+           id="rect9194"
+           width="10.561681"
+           height="28.033489"
+           x="190.24557"
+           y="126.06065"
+           ry="5.2808404"
+           transform="rotate(36.060051)" />
+        <rect
+           style="fill:#ffffff;stroke:#272d2d;stroke-width:0;stroke-linecap:round;stop-color:#000000"
+           id="rect9198"
+           width="10.561681"
+           height="28.033489"
+           x="189.48752"
+           y="75.465553"
+           ry="5.2808404"
+           transform="rotate(36.060051)" />
+      </g>
+    </g>
+  </g>
+</svg>
