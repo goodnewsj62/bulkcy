@@ -3,7 +3,7 @@
 import { Box, Grid } from "@mui/material";
 import React from "react";
 import AuthDesign from "components/designs/AuthDesign";
-import LoginForm from "components/auth/LoginForm";
+import LoginForm from "components/forms/LoginForm";
 
 
 const Login = () => {
