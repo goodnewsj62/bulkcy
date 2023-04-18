@@ -14,13 +14,15 @@ const Header = () => {
     return (
         <header className="flex w-full h-16">
             <section className="w-auto h-full flex items-center pl-4 md:pl-8 md:text-white md:w-72 md:bg-secondary">
-                <div className="h-10 w-10 flex justify-center items-center  rounded-full  hover:bg-roseyBrownLight md:hover:bg-[#ffffff19]">
+                <div className="h-10 w-10 flex justify-center items-center cursor-pointer  rounded-full  hover:bg-roseyBrownLight md:hover:bg-[#ffffff19]">
                     <HiBars3 size={iconSize} />
                 </div>
-                <div className="flex items-center md:pl-3">
-                    <BarLogoImg />
-
-                    <h2 className="font-bold ml-2 text-2xl">Bulkcy</h2>
+                <div className="md:pl-3">
+                    <Link to="/" className="flex items-center">
+                        <BarLogoImg />
+                        <h2 className="font-bold ml-2 text-2xl">Bulkcy</h2> 
+                    </Link>
+                    
                 </div>
             </section>
             <section className="flex flex-grow">
