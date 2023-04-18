@@ -12,6 +12,7 @@ export default {
         secondary: "#272D2D",
         nonPhotoBlue: "#92DCE5",
         roseyBrown: "#B79492",
+        roseyBrownLight: "#b7949238",
       }
     },
   },

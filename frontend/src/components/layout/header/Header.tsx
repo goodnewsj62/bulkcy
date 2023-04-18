@@ -1,27 +1,34 @@
-import React from "react";
+import React, { useContext } from "react";
 import {HiBars3} from "react-icons/hi2";
 import BarLogoImg from "./BarLogoImg";
 import ProfilePhoto from "./ProfilePhoto";
 import SearchToggle from "./SearchToggle";
 import { FiSettings } from "react-icons/fi";
 import { Link } from "react-router-dom";
+import {defaultIconSize} from "components/wrappers/IconSize";
+
 
 const Header = () => {
+    const iconSize =  useContext(defaultIconSize);
+
     return (
         <header className="flex w-full h-16">
-            <section className="w-auto h-full flex items-center pl-8 text-white md:w-72 md:bg-secondary">
-                <div>
-                    <HiBars3 />
+            <section className="w-auto h-full flex items-center pl-4 md:pl-8 md:text-white md:w-72 md:bg-secondary">
+                <div className="h-10 w-10 flex justify-center items-center  rounded-full  hover:bg-roseyBrownLight md:hover:bg-[#ffffff19]">
+                    <HiBars3 size={iconSize} />
                 </div>
-                <div className="flex items-center">
+                <div className="flex items-center md:pl-3">
                     <BarLogoImg />
-                    <h2 className="font-bold ">Bulkcy</h2>
+
+                    <h2 className="font-bold ml-2 text-2xl">Bulkcy</h2>
                 </div>
             </section>
-            <section className="pr-8">
+            <section className="flex flex-grow">
                 <SearchToggle />
-                <Link to="/">
-                    <FiSettings />
+                <Link to="/" className="h-full flex items-center justify-center mr-2">
+                    <span className="h-10 w-10 flex justify-center items-center  rounded-full hover:bg-roseyBrownLight">
+                    <FiSettings size={iconSize} />
+                    </span>
                 </Link>
                 <ProfilePhoto />
             </section>

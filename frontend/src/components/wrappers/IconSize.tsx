@@ -5,15 +5,16 @@ import React, {PropsWithChildren, createContext} from "react";
 
 type size = number ;
 
-const DefaultIconSize  =  createContext<size>(16);
+const defaultIconSize  =  createContext<size>(16);
 
 const IconSizeWrapper:React.FC<PropsWithChildren> = (props) => {
     
     return (
-        <DefaultIconSize.Provider value={16} >
+        <defaultIconSize.Provider value={25} >
             {props.children}
-        </DefaultIconSize.Provider>
+        </defaultIconSize.Provider>
     );
 }
 
 export default IconSizeWrapper;
+export {defaultIconSize};

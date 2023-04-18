@@ -4,7 +4,7 @@ import logowhite from "assets/logowhite.svg";
 
 export default function BarLogoImg(){
     return(
-        <div className="flex justify-center items-center">
+        <div className="hidden  justify-center items-center md:flex">
             <img className="w-12"  src={logowhite} alt="logo" />
         </div>
     )
