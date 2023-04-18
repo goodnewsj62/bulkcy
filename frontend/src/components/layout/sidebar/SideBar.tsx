@@ -1,21 +1,19 @@
 
 
 import React from "react";
+import SideNav from "./MainNav";
+import FooterNav from "./FooterNav";
+
 
 const SideBar = () => {
     
     // storage capabilities
     return (
-        <aside className="">
-            <div className="">
-                
+        <aside className="fixed">
+            <div>
+                <SideNav />
             </div>
-            <div className="">
-                <button>
-
-                </button>
-            </div>
-
+            <FooterNav />
         </aside>
     );
 }
