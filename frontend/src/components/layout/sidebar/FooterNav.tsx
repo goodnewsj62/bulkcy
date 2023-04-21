@@ -6,13 +6,13 @@ import {RiDoorOpenLine} from "react-icons/ri";
 import StorageIndicator from "components/stats/StorageIndicator";
 
 const FooterNav= () => {
-    return (
+        return (
         <div>
             <StorageIndicator />
             <div className="divider"></div>
-            <Link to="">
-                <RiDoorOpenLine />
-                <span>Logout</span>
+            <Link to="" className="flex items-center mt-4 p-4 md:pl-8">
+                <RiDoorOpenLine size={18}  />
+                <span className="ml-2">Logout</span>
             </Link>
         </div>
     );
