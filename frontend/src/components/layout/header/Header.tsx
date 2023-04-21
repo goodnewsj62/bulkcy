@@ -6,16 +6,26 @@ import SearchToggle from "./SearchToggle";
 import { FiSettings } from "react-icons/fi";
 import { Link } from "react-router-dom";
 import {defaultIconSize} from "components/wrappers/IconSize";
+import { useAppDispatch, useAppSelector } from "hooks/reduxhook";
+import { toggle } from "store/sideSlice";
 
 
 const Header = () => {
     const iconSize =  useContext(defaultIconSize);
+    const barState =  useAppSelector(store=>store.barState.state);
+    const dispatch  =  useAppDispatch();
+
+    const changeBg =  barState? `md:!bg-secondary`:  `md:text-black`;
+    const handleSideBarToggle =  function (){
+        dispatch(toggle());
+    }
+
 
     return (
         <header className="flex w-full h-16">
-            <section className="w-auto h-full flex items-center pl-4 md:pl-8 md:text-white md:w-72 md:bg-secondary">
+            <section className={`w-auto h-full transition-all flex items-center pl-4 md:pl-8 md:text-white md:w-64 ${changeBg}`}>
                 <div className="h-10 w-10 flex justify-center items-center cursor-pointer  rounded-full  hover:bg-roseyBrownLight md:hover:bg-[#ffffff19]">
-                    <HiBars3 size={iconSize} />
+                    <HiBars3 onClick={handleSideBarToggle} size={iconSize} />
                 </div>
                 <div className="md:pl-3">
                     <Link to="/" className="flex items-center">
